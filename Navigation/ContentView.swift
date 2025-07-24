@@ -13,12 +13,18 @@ struct ContentView: View {
             Text("This is the root view 🌳")
                 .padding()
             NavigationLink(destination: SecondView()) {
-                Text("Second view")
+                Text("SecondView")
             }
             .padding()
             NavigationLink(destination: Text("You have successfully logged out!")) {
-                Text("Log out")
-            }
+                Text("Contact")
+            }.padding()
+            NavigationLink(destination: Text("This app is designed to demonstrate navigations. Return home to try out the other buttons!")) {
+                Text("About")
+            }.padding()
+            NavigationLink(destination: Text("If you need help, please call the number +1 (012)-345-6789")) {
+                Text("Help")
+            }.padding()
             .navigationTitle("Home")
             .navigationBarTitleDisplayMode(.inline)
             
