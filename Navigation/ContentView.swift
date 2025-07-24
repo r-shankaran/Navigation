@@ -16,7 +16,7 @@ struct ContentView: View {
                 Text("SecondView")
             }
             .padding()
-            NavigationLink(destination: Text("You have successfully logged out!")) {
+            NavigationLink(destination: ContactView()) {
                 Text("Contact")
             }.padding()
             NavigationLink(destination: Text("This app is designed to demonstrate navigations. Return home to try out the other buttons!")) {
